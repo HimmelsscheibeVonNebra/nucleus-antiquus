@@ -1,0 +1,26 @@
+# OS / 편집기
+.DS_Store
+Thumbs.db
+*.swp
+# LibreOffice 잠금 파일
+.~lock.*#
+
+# 슬라이드 빌드 중간물. 결과물은 output/*.odp 에 있다
+.slide-build/
+
+# 부팅 검증 부산물. build/boot.png 와 build/build.log 는 문서가 참조하므로 커밋한다
+build/boot.ppm
+*.sock
+
+# lab/ 재빌드 중간 산출물.
+# lab/Image, lab/System.map, lab/tools/system 은 실행·디버깅에 쓰이므로 커밋한다
+*.o
+*.a
+lab/boot/bootsect
+lab/boot/setup
+lab/kernel/chr_drv/keyboard.s
+lab/.gdb_history
+
+# Python
+__pycache__/
+*.pyc
